@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.col1 {
+    width: 20%;
+    display: grid;
+    grid-template-rows: auto;
+    align-self: center;
+    padding-bottom: 4em;
+}
+
+.col2 {
+    width: 20%;
+    height: 100%;
+    padding-bottom: 4em;
+    align-self: center;
+}
+
+.col3 {
+    width: 20%;
+    display: grid;
+    grid-template-rows: 3em auto;
+}
+
+.col3 div {
+    grid-row-start: 2;
+}
+
+.col4 {
+    width: 20%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.col5 {
+    width: 20%;
+    display: grid;
+    grid-template-rows: 1.5em auto;
+}
+
+.col5 div {
+    grid-row-start: 2;
+}
+
+.img-cont img {
+    width: 95%;
+}
+
+
+.img-cont {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width:769px) {
+    .col1 {
+        display: none;
+    }
+
+    .col3,
+    .col4,
+    .col5,
+    .col2 {
+        width: 25%;
+    }
+}
+
+
+@media (max-width:423px) {
+    .col2 {
+        display: none;
+    }
+
+    .img-cont {
+        gap: .6em;
+    }
+
+    .col3,
+    .col4,
+    .col5 {
+        width: 30%;
+    }
+
+    .col3 img {
+        width: 100%;
+    }
+}
+
+@media (max-width:272px) {
+
+    .col3,
+    .col4,
+    .col5 {
+        display: flex;
+        gap: .6em;
+    }
+}
+
+@media (max-width:217px) {
+
+    .col4,
+    .col3 {
+        width: 40%;
+    }
+
+    .col5 {
+        display: none;
+    }
+}
+
+.navbar {
+    box-shadow: 0px 2.98256px 7.4564px rgba(0, 0, 0, 0.1);
+}
+
+.online-exp div:nth-child(1) {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 300%;
+    line-height: 120%;
+    color: #000000;
+}
+
+.online-exp div:nth-child(2) {
+    width: 30rem;
+    height: 4rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 150%;
+    line-height: 110%;
+    
+    color: #222222;
+}
+
+@media (max-width:480px){
+    .online-exp div:nth-child(1){
+        white-space: nowrap;
+        font-size: 165%;
+    }
+    .online-exp div:nth-child(2){
+        width: fit-content;
+        font-size: 120%;
+    }
+} 
+.footer-images{
+    display: flex;
+    gap: 2em;
+    overflow-x: scroll;
+}
+.fo-img{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
